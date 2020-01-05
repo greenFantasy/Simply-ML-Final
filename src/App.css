@@ -1,0 +1,197 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.background {
+  background-image: url(./background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: -10;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+/* Tabs  */
+
+.tab-list {
+  border-bottom: 1px solid #ccc;
+  padding-left: 0;
+}
+
+.tab-list-item {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: -1px;
+  padding: 0.5rem 0.75rem;
+}
+
+.tab-list-active {
+  background-color: white;
+  border: solid #ccc;
+  border-width: 1px 1px 0 1px;
+}
+
+/* drawingStuff */
+#menu-outer {
+  flex-grow: 0;
+  flex-shrink: 1;
+  border: 2px solid #aaa;
+  border-width: 2px 1px 2px 2px;
+  border-radius: 5px 0px 0px 5px;
+  padding: 5px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  min-width: 220px;
+  min-width: 220px;
+}
+
+.layers-title {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+}
+
+.table {
+	display: table;   /* Allow the centering to work */
+	margin: 5px auto;
+}
+  
+.left-break {
+  height: 10px;
+  display: block;
+  border-bottom: 2px solid #bbb;
+  margin-bottom: 10px;
+}
+
+#horizontal-list {
+	list-style: none;
+	padding: 5px;
+  margin: 0;
+}
+
+#horizontal-list li {
+  display: block;
+  margin: 10px 0px;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+}
+
+#edit-tab {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: #eee;
+  padding: 12px;
+  border-radius: 0px 0px 0px 5px;
+  border: 2px solid #777;
+  border-width: 0px 0px 2px 2px;
+  display: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+input[type=text] {
+  padding: 10px;
+  font-size: 15px;
+  text-align: center;
+  width: 50px;
+  display: block;
+  margin: 10px auto;
+}
+
+#canvas-wrap {
+  flex-grow: 0;
+  flex-shrink: 0;
+  max-width: 800px;
+  position: relative;
+  border: 2px solid #aaa;
+  border-width: 2px 2px 2px 1px;
+  border-radius: 0px 5px 5px 0px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+button{
+  display: block;
+  padding: 15px 40px;
+  margin: 10px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+#menu-outer b {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+
+.file-input {
+  padding: 10px;
+  width: 160px;
+}
+
+.main-title {
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  font-family: "Courier";
+  font-weight: bold;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+#error-table {
+  border: 1px solid #666;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.error-table-li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.error-table-li:nth-child(even) {
+  background-color: #eee;
+}
+
+#showvisor {
+  position: fixed;
+  right: 20px;
+  top: 0px;
+}
